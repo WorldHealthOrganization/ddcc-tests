@@ -18,11 +18,10 @@ All builds should pass. The status badges show the outcomes from the GitHub Acti
 
 | **Outcome** | **Workflow** |
 | --- | --- |
-| ![build ddcc fsh](https://github.com/intrahealth/instant-openhie-ddcc/workflows/build_fsh/badge.svg) | Build FSH using Sushi |
-| | | 
-| ![build ddcc ig](https://github.com/intrahealth/instant-openhie-ddcc/workflows/build_ig/badge.svg) | Build IG using Publisher |
-| | | 
-| ![submit health event](https://github.com/intrahealth/instant-openhie-ddcc/workflows/submithealthevent/badge.svg) | Submit Health Event to DDCC Transactions Mediator |
+| ![build ddcc fsh](https://github.com/openhie/ddcc-tests/workflows/build_fsh/badge.svg) | Build FSH using Sushi |
+| ![build ddcc ig](https://github.com/openhie/ddcc-tests/workflows/build_ig/badge.svg) | Build IG using Publisher |
+| ![submit health event](https://github.com/openhie/ddcc-tests/workflows/submithealthevent/badge.svg) | DDCC:VS Generation Service |
+| ![retrieve cert](https://github.com/openhie/ddcc-tests/workflows/retrievecert/badge.svg) | DDCC:VS Repository Service |
 
 
 ## IG Build Tests
