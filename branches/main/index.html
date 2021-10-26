@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>DDCC.TESTS\Index - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/openhie.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+  <!-- Questionnaire: -->
+    <link rel="stylesheet" href="assets/css/lforms.min.css"/>
+
+
+
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+  <!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a no-external="true" id="project-logo" href="http://hl7.eu">
+            <img src="assets/images/home.png" alt="Project home" height="71"/>
+          </a>
+        </div>
+
+  <!-- Right logo - for example the FHIR logo -->
+  <!-- Make sure you have authorization to use the FHIR logo -->
+        <div id="family-nav">
+          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fire.png" alt="FHIR website" height="70"/> </a>
+        </div>
+
+  <!-- search icon - if you want -->
+  <!-- <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div> -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Prototypical Testing Frameworks for DDCC</span><br/>0.0.1 - STU1</p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="quickstart.html">Quick Start</a>
+  </li>
+  <li>
+    <a href="fakedata.html">Fake Data</a>
+  </li>
+  <li>
+    <a href="development.html">Development</a>
+  </li>
+  <li>
+    <a href="versioning.html">Versioning</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+    
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Index</b></li>
+          
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Prototypical Testing Frameworks for DDCC - Local Development build (v0.0.1). See the <a href="https://openhie.github.io/ddcc-tests/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Index</h2>
+  
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+</div>
+<h1 id="prototypical-testing-framework-for-ddcc">Prototypical Testing Framework for DDCC</h1>
+
+<p>This Implementation Guide (IG) demonstrates a prototypical framework for testing conformance to the Digital Documentation of COVID-19 Certificates (DDCC) specification.</p>
+
+<blockquote>
+  <p>The tooling here does not qualify or test all aspects of the evolving DDCC specification and is not an authoritative conformance test suite. This IG is not endorsed as the conformance resource for DDCC by the authors, the OpenHIE Community, or the World Health Organization.</p>
+</blockquote>
+
+<h2 id="objectives">Objectives</h2>
+
+<p>The tooling is meant to provide a basis to understand the reference tooling and how to test their own profiled DDCC frameworks. The tooling also endeavors to provide</p>
+
+<ul>
+  <li>
+    <p><strong>Reuseable artifacts</strong>: The technical artifacts are meant for reuse by users. Users are encouraged to copy and modify for their own tests and to improve upon the prototypes provided. Permissively licensed tooling is preferred. (If a tool does not have permissive tooling, please file an issue with the authors so a suitable substitution can be found.)</p>
+  </li>
+  <li>
+    <p><strong>Test fixtures based on common tools</strong>: All of the tests are runnable using simple Bash shell scripts and can be modified for Batch files on Windows. The tests using common tools like Postman collections and cURL. Some scripts use Python but are short and the methodology can easily be adapted to other programming languages.</p>
+  </li>
+  <li>
+    <p><strong>Infrastructure-less test runners</strong>: The tests use GitHub Actions. They can be adapted to other platforms. The GitHub Actions workflows are open source and many may simply be copied into another repository and run on another DDCC IG. All tests have short runtimes to stay within the limits imposed by GitHub on free credits. Note that GitHub Actions is only free for public repositories. See the limits <a href="https://docs.github.com/en/actions/learn-github-actions/usage-limits-billing-and-administration">here</a>.</p>
+  </li>
+  <li>
+    <p><strong>Run all tests locally</strong>: The tooling can be run locally on a user’s computer using <a href="https://github.com/nektos/act">nektos/act</a>. nektos/act supports Windows, macOS, and Linux. nektos/act makes it possible to test workflows and see how they work instead of having to push to GitHub.</p>
+  </li>
+</ul>
+
+<h2 id="organization">Organization</h2>
+
+<p>This <a href="https://github.com/openhie/ddcc-tests">tooling</a> does not contain conformance resources. It only contains documentation and tooling although it is formatted using an FHIR Implementation Guide template for OpenHIE. This is only for constitency as those that are familiar with FHIR IGs may find navigation more familiar.</p>
+
+<p>The IG conformance resources are located at https://github.com/WorldHealthOrganization/ddcc. In some cases, such as for bulk data generation, the IG conformance resources must be cloned locally and run separately, then the tools in this repository run. It is made clear where this is necessary.</p>
+
+<h2 id="how-to-use-the-tooling-and-testing-framwork">How to Use the Tooling and Testing Framwork</h2>
+
+<ul>
+  <li>
+    <p><a name="l349">​</a><a href="quickstart.md"><strong>Quick Start</strong></a>: This is the starting point to using the tooling using the provided artifacts. This describes the included GitHub Actions which are reusable and should run in any GitHub repository.</p>
+  </li>
+  <li>
+    <p><a name="l358">​</a><a href="development.md"><strong>Development</strong></a>: This is for those that wish to customize and run tests locally.</p>
+  </li>
+  <li>
+    <p><a name="l367">​</a><a href="fakedata.md"><strong>Fake Data</strong></a>: A method is provided to generate fake data based on a template for FHIR Shorthand and neutral names from the periodic table of elements. Data can be generated in bulk with some user modification of the tooling as required for their implementation.</p>
+  </li>
+  <li>
+    <p><a name="l376">​</a><a href="versioning"><strong>Versioning</strong></a>: Versions for reproducing the tests herein.</p>
+  </li>
+</ul>
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+           
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.intrahealth.org">IntraHealth International</a>.  Package ddcc.tests#0.0.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 26, 2021 16:41+0000">2021-10-26</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: #81BEF7" href="https://openhie.github.io/ddcc-tests/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="assets/images/cc-by.png" alt="CC-BY" style="border-style: none;" height="17"/></a> |
+                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+
+
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+    <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

@@ -1,0 +1,9 @@
+[
+  {
+    "id": "ddcc.tests",
+    "type": "ImplementationGuide",
+    "url": "https://openhie.github.io/ddcc-tests",
+    "version": "0.0.1",
+    "name": "ddcctests"
+  }
+]
