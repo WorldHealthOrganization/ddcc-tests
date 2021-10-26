@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>DDCC.TESTS\Development - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/openhie.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+  <!-- Questionnaire: -->
+    <link rel="stylesheet" href="assets/css/lforms.min.css"/>
+
+
+
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+  <!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a no-external="true" id="project-logo" href="http://hl7.eu">
+            <img src="assets/images/home.png" alt="Project home" height="71"/>
+          </a>
+        </div>
+
+  <!-- Right logo - for example the FHIR logo -->
+  <!-- Make sure you have authorization to use the FHIR logo -->
+        <div id="family-nav">
+          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fire.png" alt="FHIR website" height="70"/> </a>
+        </div>
+
+  <!-- search icon - if you want -->
+  <!-- <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div> -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Prototypical Testing Frameworks for DDCC</span><br/>0.0.1 - STU1</p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="quickstart.html">Quick Start</a>
+  </li>
+  <li>
+    <a href="fakedata.html">Fake Data</a>
+  </li>
+  <li>
+    <a href="development.html">Development</a>
+  </li>
+  <li>
+    <a href="versioning.html">Versioning</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+    
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Development</b></li>
+          
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Prototypical Testing Frameworks for DDCC - Local Development build (v0.0.1). See the <a href="https://openhie.github.io/ddcc-tests/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Development</h2>
+  
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+</div>
+<h1 id="development">Development</h1>
+
+<p>Please go through the entire Quick Start narrative.</p>
+
+<h2 id="local-development-requirements">Local Development Requirements</h2>
+
+<p>Users should have a basic understanding of the command line in their preferred operating system, cURL, git and GitHub.</p>
+
+<p>If prototyping tests, install at least the following:</p>
+
+<ul>
+  <li>
+    <p><strong>IG Publisher</strong>: See the installation <a href="https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation">docs</a> which include a Java runtime, Ruby, the Jekyll Ruby gem.</p>
+  </li>
+  <li>
+    <p><strong>Sushi</strong>: See the Sushi installation <a href="https://fshschool.org/docs/sushi/installation/">docs</a> which include NodeJS.</p>
+  </li>
+  <li>
+    <p><a name="l312">​</a><strong>nektos/act</strong>: To run locally, follow the instructions to install <a href="[nektos/act](https://github.com/nektos/act)">nektos/act</a>. The .actrc has been kept in the repository for reference.</p>
+  </li>
+  <li>
+    <p><strong>Docker and docker-compose</strong>: Act requires docker and docker compose is also required for the tests here. On Windows and macOS, compose is included now in Docker Desktop. Linux users must separately installed docker-compose.</p>
+  </li>
+</ul>
+
+<h2 id="how-to-run-locally">How to Run Locally</h2>
+
+<p>Clone the tests repository.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git@github.com:openhie/ddcc-tests.git
+cd ddcc-tests
+ls -a
+</code></pre></div></div>
+
+<p>This testing repository has been specially designed to ensure that all of the tests can run with GitHub Actions on your local computer and can be used to reproduce all results. This is accomplished using <a href="https://github.com/nektos/act">nektos/act</a>.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">.actrc</code> file contains an environment variable for <code class="language-plaintext highlighter-rouge">GITHUB_TOKEN</code>. This is required. It must be available to the CLI environment. If this file is not used, then it must be explicitly passed, e.g. <code class="language-plaintext highlighter-rouge">act -s GITHUB_TOKEN=$GITHUB_TOKEN</code> or <code class="language-plaintext highlighter-rouge">act -s GITHUB_TOKEN</code>
+&lt;.actrc&gt;</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--secret GITHUB_TOKEN
+--secret-file .secrets
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">GITHUB_TOKEN</code> is defined in the shell environment and is required for all but basic operations and for the workflows here to be successful. See <a href="https://docs.github.com/en/actions/security-guides/automatic-token-authentication">here</a>. <code class="language-plaintext highlighter-rouge">.secrets</code> is illustrates another option some users may find useful to pass variables.</p>
+
+<p>Once nektos/act is installed, the first step is to list the workflows in the repository. It will scan the <code class="language-plaintext highlighter-rouge">.github/workflows</code> folder.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ act -l
+ID                 Stage  Name
+build_fsh          0      build_fsh
+build_ig           0      build_ig
+build              0      build
+submithealthevent  0      submithealthevent
+</code></pre></div></div>
+
+<p>Then jobs can be launched with the <code class="language-plaintext highlighter-rouge">act -j &lt;jobname&gt;</code> command.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ act -j build_ig
+[build_ig/build_ig] 🚀  Start image=catthehacker/ubuntu:act-latest
+[build_ig/build_ig]   🐳  docker run image=catthehacker/ubuntu:act-latest platform= entrypoint=["/usr/bin/tail" "-f" "/dev/null"] cmd=[]
+[build_ig/build_ig]   🐳  docker exec cmd=[mkdir -m 0777 -p /var/run/act] user=root
+[build_ig/build_ig] ⭐  Run Checkout IG
+...
+</code></pre></div></div>
+
+<p>When act is used, some features of GitHub Actions may not work as expected. This is often because act uses the Docker engine on a platform, and not a full virtual machine as GitHub Actions does. So, some commands, like kubectl, are already included in all GitHub Actions runners but not in act. To address this, act includes an environment variable <code class="language-plaintext highlighter-rouge">env.ACT</code> which indicates if the workflows are run locally or on the Microsoft Azure VM infrastructure that GitHub uses.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Run this step only if ACT is being used.
+- name: Some step
+if: $
+# Or, run this step only if ACT is not being used.
+if: $
+</code></pre></div></div>
+
+<h2 id="iterating">Iterating</h2>
+
+<p>If you want to run tests against the reference <code class="language-plaintext highlighter-rouge">DDCC:VS Registry Service</code>, <code class="language-plaintext highlighter-rouge">Repository Service</code>, and <code class="language-plaintext highlighter-rouge">Generation Service</code>, clone it and run it.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@github.com:openhie/ddcc-transactions-mediator.git
+cd ddcc-transactions-mediator
+ls -a
+docker-compose -f docker-compose.dev.yml up
+</code></pre></div></div>
+<p>The server is running the mediator (submit health events) at port 4321, and HAPI is running on 8080. There are tests in the Postman folder to try for the operations.</p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+           
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.intrahealth.org">IntraHealth International</a>.  Package ddcc.tests#0.0.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 26, 2021 16:41+0000">2021-10-26</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: #81BEF7" href="https://openhie.github.io/ddcc-tests/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="assets/images/cc-by.png" alt="CC-BY" style="border-style: none;" height="17"/></a> |
+                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+
+
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+    <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
