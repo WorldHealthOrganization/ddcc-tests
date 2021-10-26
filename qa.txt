@@ -3,7 +3,7 @@
 
 err = 6, warn = 2, info = 0
 IG Publisher Version: 1.1.83
-Generated Tue Oct 26 16:45:04 UTC 2021. FHIR version 4.0.1 for ddcc.tests#0.0.1 (canonical = https://openhie.github.io/ddcc-tests)
+Generated Tue Oct 26 16:47:06 UTC 2021. FHIR version 4.0.1 for ddcc.tests#0.0.1 (canonical = https://openhie.github.io/ddcc-tests)
  Build Errors : 9 / 1 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-ddcc.tests : 4 / 1 / 1
 </table>
