@@ -18,7 +18,7 @@ If prototyping tests, install at least the following:
 
 ## How to Run Locally
 
-Clone the repository.
+Clone the tests repository.
 ```
 git@github.com:openhie/ddcc-tests.git
 cd ddcc-tests
@@ -68,3 +68,11 @@ if: ${{ !env.ACT }}
 
 ## Iterating
 
+If you want to run tests against the reference `DDCC:VS Registry Service`, `Repository Service`, and `Generation Service`, clone it and run it.
+```
+git clone git@github.com:openhie/ddcc-transactions-mediator.git
+cd ddcc-transactions-mediator
+ls -a
+docker-compose -f docker-compose.dev.yml up
+```
+The server is running the mediator (submit health events) at port 4321, and HAPI is running on 8080. There are tests in the Postman folder to try for the operations.
