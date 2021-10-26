@@ -1,0 +1,45 @@
+name: build_fsh
+
+on:
+  push:
+    branches: 
+      - main
+  pull_request:
+    branches: 
+      - main
+  workflow_dispatch:
+
+
+jobs:
+  build_fsh:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout IG
+        uses: actions/checkout@v2
+        with:
+          repository: WorldHealthOrganization/ddcc
+          # seems have to set path no matter what
+          path: ddcc
+          # branch
+          # ref: main
+          token: ${{ secrets.GITHUB_TOKEN || github.token }}
+          # if running with act, then 'act -s GITHUB_TOKEN=$GITHUB_TOKEN' or 'act -s GITHUB_TOKEN' or use .actrc
+
+      - run: echo "${{ github.workspace }}"
+
+      - name: Prepare sushi
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - run: npm install -g fsh-sushi@2.1.1
+
+      - run: ls -la
+
+      - run: cd ddcc && ls -la
+
+      - run: sushi --version
+
+      - run: cd ddcc && sushi --debug

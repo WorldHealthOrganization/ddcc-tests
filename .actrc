@@ -1,0 +1,3 @@
+# --quiet
+--secret GITHUB_TOKEN
+--secret-file .secrets

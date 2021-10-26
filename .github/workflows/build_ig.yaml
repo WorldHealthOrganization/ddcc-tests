@@ -1,0 +1,65 @@
+name: build_ig
+
+on:
+  push:
+    branches: 
+      - main
+  pull_request:
+    branches: 
+      - main
+  workflow_dispatch:
+
+
+jobs:
+  build_ig:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout IG
+        uses: actions/checkout@v2
+        with:
+          repository: WorldHealthOrganization/ddcc
+          path: ddcc
+          # token: ${{ secrets.GITHUB_TOKEN || github.token }}
+          # if running with act, then 'act -s GITHUB_TOKEN=$GITHUB_TOKEN' or 'act -s GITHUB_TOKEN'
+
+      - run: echo "${{ github.workspace }}"
+
+      - name: Prepare instant
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - run: npm install -g fsh-sushi@2.0.1
+
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0.2
+          bundler-cache: true
+
+      - run: gem install bundler
+
+      - run: gem install jekyll -v 4.2.0 
+      
+      - name: Setup Java
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'zulu'
+          java-version: '11'
+
+      - run: echo "${PATH}"
+
+      - run: cd ddcc && ls -la
+
+      - run: cd ddcc && ./_updatePublisher.sh -y
+
+      - run: cd ddcc && ./_genonce.sh
+
+      - name: Store qa.html
+        uses: actions/upload-artifact@v2
+        if: ${{ !env.ACT }}
+        with:
+          name: qa.html
+          path: ./ddcc/output/qa.html

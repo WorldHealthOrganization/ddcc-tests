@@ -1,0 +1,54 @@
+name: submithealthevent
+
+on:
+  push:
+    branches: 
+      - main
+  pull_request:
+    branches: 
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  submithealthevent:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout ddcc-transactions-mediator
+        uses: actions/checkout@v2
+        with:
+          repository: openhie/ddcc-transactions-mediator
+
+      - run: ls -la
+
+      # or error from act: docker-compose: command not found
+      - name: docker-compose install if using act
+        run: |
+          sudo curl -L https://github.com/docker/compose/releases/download/1.16.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+          sudo chmod +x /usr/local/bin/docker-compose
+        if: ${{ env.ACT }}
+
+      - name: Launch ddcc mediator and hapi
+        run: docker-compose up -d
+
+      # wait for stack to come up
+      - run: sleep 120
+
+      - name: Submit Health Event
+        working-directory: tests
+        run: |
+          curl -X POST localhost:4321/ddcc/submitHealthEvent -d @Demo-Bundle-1.json -H "Content-type: application/fhir+json" | jq --raw-output '.entry[].resource.entry[].resource | select(.resourceType=="DocumentReference") | .content[].attachment | select(.contentType=="image/png")'
+          curl -X POST localhost:4321/ddcc/submitHealthEvent -d @Demo-Bundle-1.json -H "Content-type: application/fhir+json" | jq --raw-output '.entry[].resource.entry[].resource | select(.resourceType=="DocumentReference") | .content[].attachment | select(.contentType=="image/png") | .data' | base64 --decode > submithealthevent.png
+
+      - name: Store QR Code
+        uses: actions/upload-artifact@v2
+        if: ${{ !env.ACT }}
+        with:
+          name: submithealthevent.png
+          path: tests/submithealthevent.png
+        continue-on-error: true
+
+      - name: Teardown
+        run: |
+          docker-compose down
