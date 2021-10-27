@@ -10,6 +10,8 @@ The tooling is meant to provide a basis to understand the reference tooling and 
 
 * **Reuseable artifacts**: The technical artifacts are meant for reuse by users. Users are encouraged to copy and modify for their own tests and to improve upon the prototypes provided. Permissively licensed tooling is preferred. (If a tool does not have permissive tooling, please file an issue with the authors so a suitable substitution can be found.)
 
+* **Bulk fake data creation**: A method is provided to easily create fake data in bulk based on a template file. This builds on [FHIR Shorthand](https://fshschool.org), an increasingly popular way to author FHIR resources. The data can be used for integration tests, load testing, and QA.
+
 * **Test fixtures based on common tools**: All of the tests are runnable using simple Bash shell scripts and can be modified for Batch files on Windows. The tests using common tools like Postman collections and cURL. Some scripts use Python but are short and the methodology can easily be adapted to other programming languages.
 
 * **Infrastructure-less test runners**: The tests use GitHub Actions. They can be adapted to other platforms. The GitHub Actions workflows are open source and many may simply be copied into another repository and run on another DDCC IG. All tests have short runtimes to stay within the limits imposed by GitHub on free credits. Note that GitHub Actions is only free for public repositories. See the limits [here](https://docs.github.com/en/actions/learn-github-actions/usage-limits-billing-and-administration).
