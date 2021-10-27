@@ -111,6 +111,19 @@ In GitHub Actions, this is done as so.
     path: tests/submithealthevent.png
 ```
 
+#### Verification of being in-spec
+
+The above artifacts are generated for users to be able to document that their DDCC-based IG can meet the specification. The user should define their own IG, generate artifacts and compare the results. 
+
+For example:
+* Generate a set of representative fake data. This can be done with the [fake data](fakedata.md) approach outlined in these docs.
+* Within one IG
+  * Confirm that the same result is produced for each patient on repeated runs.
+* Between DDCC and another IG
+  * Confirm that the same result is produced for each submitted health event for the same patient between IGs.
+
+To compare, built-in utilities exist to compare the files in one line, e.g. `diff` in *Nix systems, and `FC` on Windows.
+
 ### `Retrieve Health Certificate`
 
 * Complete the `Retrieve Health Certificate` transaction by using an MHD transaction to obtain the document.
