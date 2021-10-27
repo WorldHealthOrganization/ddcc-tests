@@ -26,10 +26,10 @@ The IG conformance resources are located at https://github.com/WorldHealthOrgani
 
 ## How to Use the Tooling and Testing Framwork
 
-* [**Quick Start**](quickstart.md): This is the starting point to using the tooling using the provided artifacts. This describes the included GitHub Actions which are reusable and should run in any GitHub repository.
+* [**Quick Start**](quickstart.html): This is the starting point to using the tooling using the provided artifacts. This describes the included GitHub Actions which are reusable and should run in any GitHub repository.
 
-* [**Development**](development.md): This is for those that wish to customize and run tests locally.
+* [**Development**](development.html): This is for those that wish to customize and run tests locally.
 
-* [**Fake Data**](fakedata.md): A method is provided to generate fake data based on a template for FHIR Shorthand and neutral names from the periodic table of elements. Data can be generated in bulk with some user modification of the tooling as required for their implementation.
+* [**Fake Data**](fakedata.html): A method is provided to generate fake data based on a template for FHIR Shorthand and neutral names from the periodic table of elements. Data can be generated in bulk with some user modification of the tooling as required for their implementation.
 
-* [**Versioning**](versioning): Versions for reproducing the tests herein.
+* [**Versioning**](versioning.html): Versions for reproducing the tests herein.
