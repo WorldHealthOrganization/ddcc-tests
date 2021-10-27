@@ -95,10 +95,12 @@ The next step pipes the Base64 encoded output to the decoder to it becomes binar
 | base64 --decode > submithealthevent.png
 ```
 <img src="submithealthevent.png" width="250">
+<br clear="all">
 
 GitHub Actions allows you to publish artifacts. These can be found on the Actions tab in [this respository](https://github.com/openhie/ddcc-tests). Navigate to the Actions tab, choose a workflow on the left, then choose a commit on the main view, and look at the bottom for the artifacts.
 
 <img src="artifacts.png" width="600">
+<br clear="all">
 
 In GitHub Actions, this is done as so.
 ```yaml
