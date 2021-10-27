@@ -1,10 +1,10 @@
 ﻿ddcctests : Validation Results
 =========================================
 
-err = 6, warn = 2, info = 0
+err = 4, warn = 2, info = 0
 IG Publisher Version: 1.1.83
-Generated Wed Oct 27 09:57:10 UTC 2021. FHIR version 4.0.1 for ddcc.tests#0.0.1 (canonical = https://openhie.github.io/ddcc-tests)
- Build Errors : 9 / 1 / 0
+Generated Wed Oct 27 10:14:59 UTC 2021. FHIR version 4.0.1 for ddcc.tests#0.0.1 (canonical = https://openhie.github.io/ddcc-tests)
+ Build Errors : 7 / 1 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-ddcc.tests : 4 / 1 / 1
 </table>
 == n/a ==
@@ -16,8 +16,6 @@ ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/ul/li/
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 210, column 9: The link 'versioning' for "Versioning" cannot be resolved
 ERROR: /github/workspace/output/quickstart.html#/html/body/div/div/div/div/div/p/a at Line 249, column 254: The link 'DDCC-ghpages' for "example" cannot be resolved
 ERROR: /github/workspace/output/quickstart.html#/html/body/div/div/div/div/div/p/a at Line 270, column 446: The link 'fakedata.md' for "fake data" cannot be resolved
-ERROR: /github/workspace/output/quickstart.html#/html/body/div/div/div/div/div/p/img at Line 304, column 5: The image source 'submithealthevent.png' cannot be resolved
-ERROR: /github/workspace/output/quickstart.html#/html/body/div/div/div/div/div/p/img at Line 308, column 5: The image source 'artifacts.png' cannot be resolved
 == fsh-generated/resources/ImplementationGuide-ddcc.tests.json ==
 ERROR: ImplementationGuide.where(url = 'https://openhie.github.io/ddcc-tests'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-ddcc.tests.json - the canonical URL (https://openhie.github.io/ddcc-tests/ImplementationGuide/ddcc.tests) does not match the URL (https://openhie.github.io/ddcc-tests)
 ERROR: ImplementationGuide.url: Resource id/url mismatch: ddcc.tests/https://openhie.github.io/ddcc-tests
