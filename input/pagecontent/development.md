@@ -43,6 +43,7 @@ ID                 Stage  Name
 build_fsh          0      build_fsh
 build_ig           0      build_ig
 build              0      build
+retrievecert       0      retrievecert
 submithealthevent  0      submithealthevent
 ```
 
