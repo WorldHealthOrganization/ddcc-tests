@@ -3,8 +3,8 @@
 
 err = 4, warn = 2, info = 0
 IG Publisher Version: 1.1.83
-Generated Wed Oct 27 11:44:55 UTC 2021. FHIR version 4.0.1 for ddcc.tests#0.0.1 (canonical = https://openhie.github.io/ddcc-tests)
- Build Errors : 7 / 1 / 0
+Generated Wed Oct 27 11:55:13 UTC 2021. FHIR version 4.0.1 for ddcc.tests#0.0.1 (canonical = https://openhie.github.io/ddcc-tests)
+ Build Errors : 8 / 1 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-ddcc.tests : 4 / 1 / 1
 </table>
 == n/a ==
@@ -16,6 +16,7 @@ ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/ul/li/
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 213, column 9: The link 'versioning' for "Versioning" cannot be resolved
 ERROR: /github/workspace/output/quickstart.html#/html/body/div/div/div/div/div/p/a at Line 249, column 254: The link 'DDCC-ghpages' for "example" cannot be resolved
 ERROR: /github/workspace/output/quickstart.html#/html/body/div/div/div/div/div/p/a at Line 270, column 446: The link 'fakedata.md' for "fake data" cannot be resolved
+ERROR: /github/workspace/output/quickstart.html#/html/body/div/div/div/div/div/ul/li/a at Line 326, column 78: The link 'fakedata.md' for "fake data" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-ddcc.tests.json ==
 ERROR: ImplementationGuide.where(url = 'https://openhie.github.io/ddcc-tests'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-ddcc.tests.json - the canonical URL (https://openhie.github.io/ddcc-tests/ImplementationGuide/ddcc.tests) does not match the URL (https://openhie.github.io/ddcc-tests)
 ERROR: ImplementationGuide.url: Resource id/url mismatch: ddcc.tests/https://openhie.github.io/ddcc-tests
