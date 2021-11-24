@@ -3,16 +3,23 @@
 
 err = 4, warn = 2, info = 0
 IG Publisher Version: 1.1.89
-Generated Wed Nov 24 14:27:04 UTC 2021. FHIR version 4.0.1 for ddcc.tests#0.0.1 (canonical = https://openhie.github.io/ddcc-tests)
- Build Errors : 4 / 1 / 0
+Generated Wed Nov 24 14:28:34 UTC 2021. FHIR version 4.0.1 for ddcc.tests#0.0.1 (canonical = https://openhie.github.io/ddcc-tests)
+ Build Errors : 11 / 1 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-ddcc.tests : 4 / 1 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
-ERROR: /github/workspace/output/development.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 182, column 89: The link '[nektos/act](https://github.com/nektos/act)' for "nektos/act" cannot be resolved
-ERROR: /github/workspace/output/quickstart.html#/html/body/div/div/div/div/div/p/a at Line 249, column 254: The link 'DDCC-ghpages' for "example" cannot be resolved
-ERROR: /github/workspace/output/quickstart.html#/html/body/div/div/div/div/div/p/a at Line 270, column 446: The link 'fakedata.md' for "fake data" cannot be resolved
-ERROR: /github/workspace/output/quickstart.html#/html/body/div/div/div/div/div/ul/li/a at Line 326, column 78: The link 'fakedata.md' for "fake data" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 173, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /github/workspace/output/development.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 161, column 89: The link '[nektos/act](https://github.com/nektos/act)' for "nektos/act" cannot be resolved
+ERROR: /github/workspace/output/development.html#/html/body/div/div/div/p/a at Line 257, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /github/workspace/output/fakedata.html#/html/body/div/div/div/p/a at Line 271, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 229, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /github/workspace/output/quickstart.html#/html/body/div/div/div/div/div/p/a at Line 228, column 254: The link 'DDCC-ghpages' for "example" cannot be resolved
+ERROR: /github/workspace/output/quickstart.html#/html/body/div/div/div/div/div/p/a at Line 249, column 446: The link 'fakedata.md' for "fake data" cannot be resolved
+ERROR: /github/workspace/output/quickstart.html#/html/body/div/div/div/div/div/ul/li/a at Line 305, column 78: The link 'fakedata.md' for "fake data" cannot be resolved
+ERROR: /github/workspace/output/quickstart.html#/html/body/div/div/div/p/a at Line 384, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 161, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /github/workspace/output/versioning.html#/html/body/div/div/div/p/a at Line 256, column 19: The link 'license.html' for "" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-ddcc.tests.json ==
 ERROR: ImplementationGuide.where(url = 'https://openhie.github.io/ddcc-tests'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-ddcc.tests.json - the canonical URL (https://openhie.github.io/ddcc-tests/ImplementationGuide/ddcc.tests) does not match the URL (https://openhie.github.io/ddcc-tests)
 ERROR: ImplementationGuide.url: Resource id/url mismatch: ddcc.tests/https://openhie.github.io/ddcc-tests

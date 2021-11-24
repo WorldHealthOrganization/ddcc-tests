@@ -19,14 +19,11 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
   	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
-<link rel="stylesheet" href="assets/css/openhie.css"/>
+    <link rel="stylesheet" href="assets/css/cqf.css"/>
+
+    <link rel="stylesheet" href="assets/css/who.css"/>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
-  <!-- Questionnaire: -->
-    <link rel="stylesheet" href="assets/css/lforms.min.css"/>
-
-
-
 
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- [if lt IE 9]>
@@ -51,23 +48,9 @@
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
 
-  <!-- Left logo - typically the publisher's logo - project or affiliate -->
-        <div id="project-nav">
-          <a no-external="true" id="project-logo" href="http://hl7.eu">
-            <img src="assets/images/home.png" alt="Project home" height="71"/>
-          </a>
-        </div>
-
-  <!-- Right logo - for example the FHIR logo -->
-  <!-- Make sure you have authorization to use the FHIR logo -->
-        <div id="family-nav">
-          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fire.png" alt="FHIR website" height="70"/> </a>
-        </div>
-
-  <!-- search icon - if you want -->
-  <!-- <div id="hl7-search">
-          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
-        </div> -->
+<div id="family-nav">
+  <a no-external="true" id="family-logo" href="https://github.com/cqframework"><img src="assets/images/cqf.png" alt="Visit the CQF github organization website" height="50"/> </a>
+</div>
 
 
         <div id="ig-status">
@@ -117,12 +100,12 @@
       </div>    <!-- /container -->
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
-    
+
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Quickstart</b></li>
-          
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
@@ -242,7 +225,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Many IGs use FHIR Shorthand (FSH) to create conformance resources and examples. DDCC uses FSH. FSH files are stored in IGs in /input/fsh. As a test, Sushi (aka “SUSHI Unshortens Short Hand Inputs”) is run to generate JSON files from FSH files. Running this step indicates if there are any outstanding IG issues from the FSH files. This is helpful to do before running Publisher.</p>
 
-<p><a name="l444">​</a>The <code class="language-plaintext highlighter-rouge">build_ig</code> workflow builds the DDCC Implementation Guide and outputs an artifact for the QA report. This is a different workflow than publishing an IG to GitHub Pages, for which DDCC is an <a href="DDCC-ghpages">example</a>.</p>
+<p><a name="l424">​</a>The <code class="language-plaintext highlighter-rouge">build_ig</code> workflow builds the DDCC Implementation Guide and outputs an artifact for the QA report. This is a different workflow than publishing an IG to GitHub Pages, for which DDCC is an <a href="DDCC-ghpages">example</a>.</p>
 
 <p><a href="https://github.com/HL7/fhir-ig-publisher">Publisher</a> creates a full IG output including HTML pages using the Ruby-based Jekyll engine. A helpful output from Publisher is the QA report <code class="language-plaintext highlighter-rouge">qa.html</code>. This is captured during the workflow and provided as an artifact on the workflow page. When Publisher runs and the IG is published, the QA report is linked on the footer of the pages.</p>
 
@@ -263,7 +246,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>The test is located in <code class="language-plaintext highlighter-rouge">.github/workflows/submithealthevent.yaml</code> of <a href="https://github.com/openhie/ddcc-tests">this respository</a>.</p>
 
-<p><a name="l516">​</a>The test clones the <a href="https://github.com/openhie/ddcc-transactions-mediator">DDCC transactions mediator</a> repository. In that repository there is a tests folder which has fake data, although fake data can be used from the <a href="https://github.com/WorldHealthOrganization/ddcc">ddcc IG</a> in /output after running Publisher, or from data generated in the <a href="https://github.com/intrahealth/bulk-fsh">bulk data</a> repo. See <a href="fakedata.md">fake data</a>.</p>
+<p><a name="l496">​</a>The test clones the <a href="https://github.com/openhie/ddcc-transactions-mediator">DDCC transactions mediator</a> repository. In that repository there is a tests folder which has fake data, although fake data can be used from the <a href="https://github.com/WorldHealthOrganization/ddcc">ddcc IG</a> in /output after running Publisher, or from data generated in the <a href="https://github.com/intrahealth/bulk-fsh">bulk data</a> repo. See <a href="fakedata.md">fake data</a>.</p>
 
 <p>The test sets up the repo…</p>
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Checkout instant</span>
@@ -319,7 +302,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>For example:</p>
 <ul>
-  <li><a name="l781">​</a>Generate a set of representative fake data. This can be done with the <a href="fakedata.md">fake data</a> approach outlined in these docs.</li>
+  <li><a name="l761">​</a>Generate a set of representative fake data. This can be done with the <a href="fakedata.md">fake data</a> approach outlined in these docs.</li>
   <li>Within one IG
     <ul>
       <li>Confirm that the same result is produced for each patient on repeated runs.</li>
@@ -388,21 +371,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
 
-           
       <div class="inner-wrapper">
-        <p>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.intrahealth.org">IntraHealth International</a>.  Package ddcc.tests#0.0.1 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 24, 2021 14:26+0000">2021-11-24</span>
+        <p><a name="l958">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.intrahealth.org">IntraHealth International</a>.  Package ddcc.tests#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 24, 2021 14:28+0000">2021-11-24</span>
           <br/>
-          <span style="color: #FFFF77">
-                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
-                 <a style="color: #81BEF7" href="https://openhie.github.io/ddcc-tests/history.html" target="_blank">Version History</a> |
-                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="assets/images/cc-by.png" alt="CC-BY" style="border-style: none;" height="17"/></a> |
-                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                
+                 | <a style="color: #81BEF7" href="https://openhie.github.io/ddcc-tests/history.html" target="_blank">Version History <img src="external.png" alt="external" style="vertical-align: baseline"/></a> |
+                 <a rel="license" style="color: #81BEF7" href="license.html"></a> |
+                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
 
-
-          </span>
+          
         </p>
       </div>    <!-- /inner-wrapper -->
     </div>    <!-- /container -->
@@ -423,7 +405,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
-    <!-- feedback form - Google forms -->
+  <!-- feedback form - Google forms -->
   <!-- v0.1, 2021-01-09 -->
 
 
