@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://openhie.github.io/ddcc-tests/ImplementationGuide/ddcc.tests> a fhir:ImplementationGuide;
+<https://WorldHealthOrganization.github.io/ddcc-tests/ImplementationGuide/ddcc.tests> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "ddcc.tests"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ddcctests</h2><p>The official URL for this implementation guide is: </p><pre>https://openhie.github.io/ddcc-tests</pre><div><p>Prototypical Testing Frameworks for DDCC</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ddcctests</h2><p>The official URL for this implementation guide is: </p><pre>https://WorldHealthOrganization.github.io/ddcc-tests</pre><div><p>Prototypical Testing Frameworks for DDCC</p>\n</div></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "https://openhie.github.io/ddcc-tests"];
+  fhir:ImplementationGuide.url [ fhir:value "https://WorldHealthOrganization.github.io/ddcc-tests"];
   fhir:ImplementationGuide.version [ fhir:value "0.0.1"];
   fhir:ImplementationGuide.name [ fhir:value "ddcctests"];
   fhir:ImplementationGuide.title [ fhir:value "Prototypical Testing Frameworks for DDCC"];
@@ -395,7 +395,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://openhie.github.io/ddcc-tests/ImplementationGuide/ddcc.tests.ttl> a owl:Ontology;
+<https://WorldHealthOrganization.github.io/ddcc-tests/ImplementationGuide/ddcc.tests.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
