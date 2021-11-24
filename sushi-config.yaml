@@ -8,9 +8,9 @@
 
 
 id: ddcc.tests
-canonical: https://openhie.github.io/ddcc-tests/ImplementationGuide-ddcc.tests.json
+canonical: https://WorldHealthOrganization.github.io/ddcc-tests/ImplementationGuide-ddcc.tests.json
 # canonical: http://example.com/fhir/example
-url: https://openhie.github.io/ddcc-tests
+url: https://WorldHealthOrganization.github.io/ddcc-tests
 name: ddcc-tests
 title: "Prototypical Testing Frameworks for DDCC"
 description: "Prototypical Testing Frameworks for DDCC"
