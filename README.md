@@ -10,11 +10,11 @@ View the docs:
 
 This ImplementationGuide is published in the following locations:
 
-Continuous Build using Publisher (same content as above): http://openhie.github.io/ddcc-tests
+Continuous Build using Publisher (same content as above): http://WorldHealthOrganization.github.io/ddcc-tests
 
-Canonical / permanent URL: https://github.com/openhie/ddcc-tests
+Canonical / permanent URL: https://github.com/WorldHealthOrganization/ddcc-tests
 
 
 ## Issues
 
-Issues and change requests are managed here: https://github.com/openhie/ddcc-tests/issues
+Issues and change requests are managed here: https://github.com/WorldHealthOrganization/ddcc-tests/issues
