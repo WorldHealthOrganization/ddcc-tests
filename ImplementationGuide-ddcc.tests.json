@@ -3,9 +3,9 @@
   "id": "ddcc.tests",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ddcctests</h2><p>The official URL for this implementation guide is: </p><pre>https://openhie.github.io/ddcc-tests</pre><div><p>Prototypical Testing Frameworks for DDCC</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ddcctests</h2><p>The official URL for this implementation guide is: </p><pre>https://WorldHealthOrganization.github.io/ddcc-tests</pre><div><p>Prototypical Testing Frameworks for DDCC</p>\n</div></div>"
   },
-  "url": "https://openhie.github.io/ddcc-tests",
+  "url": "https://WorldHealthOrganization.github.io/ddcc-tests",
   "version": "0.0.1",
   "name": "ddcctests",
   "title": "Prototypical Testing Frameworks for DDCC",

@@ -3,10 +3,10 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ddcc.tests"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ddcctests</h2><p>The official URL for this implementation guide is: </p><pre>https://openhie.github.io/ddcc-tests</pre><div><p>Prototypical Testing Frameworks for DDCC</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ddcctests</h2><p>The official URL for this implementation guide is: </p><pre>https://WorldHealthOrganization.github.io/ddcc-tests</pre><div><p>Prototypical Testing Frameworks for DDCC</p>
 </div></div>
   </text>
-  <url value="https://openhie.github.io/ddcc-tests"/>
+  <url value="https://WorldHealthOrganization.github.io/ddcc-tests"/>
   <version value="0.0.1"/>
   <name value="ddcctests"/>
   <title value="Prototypical Testing Frameworks for DDCC"/>
